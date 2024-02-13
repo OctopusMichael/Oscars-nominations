@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Libre Baskerville", serif;
+ 
+}
+
+
+@keyframes show {
+  from {
+      opacity: 0;
+      scale: 25%;
+  }
+
+  to {
+      opacity: 1;
+      scale: 100%;
+  }
+}
+
+fieldset {
+  view-timeline-name: --image;
+  view-timeline-axis: block;
+
+  animation-timeline: --image;
+  animation-name: show;
+
+  animation-range: entry 25% cover 30%;
+  animation-fill-mode: both;
+} 
+

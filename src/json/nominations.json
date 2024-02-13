@@ -1,0 +1,260 @@
+[
+  {
+    "id": 0,
+    "category": "Best Picture",
+    "options": [
+      "American Fiction",
+      "Anatomy of a Fall",
+      "Barbie",
+      "The Holdovers",
+      "Killers of the Flower Moon",
+      "Maestro",
+      "Oppenheimer",
+      "Past Lives",
+      "Poor Things",
+      "The Zone of Interest"
+    ]
+  },
+  {
+    "id": 1,
+    "category": "Best Actor",
+    "options": [
+      "Bradley Cooper - Maestro",
+      "Colman Domingo - Rustin",
+      "Paul Giamatti - The Holdovers",
+      "Cillian Murphy - Oppenheimer",
+      "Jeffrey Wright - American Fiction"
+    ]
+  },
+  {
+    "id": 2,
+    "category": "Best Actress",
+    "options": [
+      "Annette Bening - Nyad",
+      "Lily Gladstone - Killers of the Flower Moon",
+      "Sandra Huller - Anatomy of a Fall",
+      "Carey Mulligan - Maestro",
+      "Emma Stone - Poor Things"
+    ]
+  },
+  {
+    "id": 3,
+    "category": "Best Supporting Actress",
+    "options": [
+      "Emily Blunt - Oppenheimer",
+      "Danielle Brooks - The Color Purple",
+      "America Ferrera - Barbie",
+      "Jodie Foster - Nyad",
+      "Da'Vine Joy Randolph - The Holdovers"
+    ]
+  },
+  {
+    "id": 4,
+    "category": "Best Supporting Actor",
+    "options": [
+      "Sterling K Brown - American Fiction",
+      "Robert De Niro - Killers of the Flower Moon",
+      "Robert Downey Jr - Oppenheimer",
+      "Ryan Gosling - Barbie",
+      "Mark Ruffalo - Poor Things"
+    ]
+  },
+  {
+    "id": 5,
+    "category": "Best Director",
+    "options": [
+      "Anatomy of a Fall - Justine Triet",
+      "Killers of the Flower Moon - Martin Scorsese",
+      "Oppenheimer - Christopher Nolan",
+      "Poor Things - Yorgos Lanthimos",
+      "The Zone of Interest - Jonathan Glazer"
+    ]
+  },
+  {
+    "id": 6,
+    "category": "Best Adapted Screenplay",
+    "options": [
+      "American Fiction",
+      "Barbie",
+      "Oppenheimer",
+      "Poor Things",
+      "The Zone of Interest"
+    ]
+  },
+  {
+    "id": 7,
+    "category": "Best Original Screenplay",
+    "options": [
+      "Anatomy of a Fall",
+      "The Holdovers",
+      "Maestro",
+      "May December",
+      "Past Lives"
+    ]
+  },
+  {
+    "id": 8,
+    "category": "Best Original Song",
+    "options": [
+      "The Fire Inside - Flamin' Hot (Diane Warren)",
+      "I'm Just Ken - Barbie (Mark Ronson, Andrew Wyatt)",
+      "It Never Went Away - American Symphony (Jon Batiste, Dan Wilson)",
+      "Wahzhazhe (A Song For My People) - Killers of the Flower Moon (Scott George)",
+      "What Was I Made For? - Barbie (Billie Eilish, Finneas O'Connell)"
+    ]
+  },
+  {
+    "id": 9,
+    "category": "Best Original Score",
+    "options": [
+      "American Fiction",
+      "Indiana Jones and the Dial of Destiny",
+      "Killers of the Flower Moon",
+      "Oppenheimer",
+      "Poor Things"
+    ]
+  },
+  {
+    "id": 10,
+    "category": "Best International Feature",
+    "options": [
+      "Io Capitano",
+      "Perfect Days",
+      "Society of the Snow",
+      "The Teachers' Lounge",
+      "The Zone of Interest"
+    ]
+  },
+  {
+    "id": 11,
+    "category": "Best Animated Feature",
+    "options": [
+      "The Boy and the Heron",
+      "Elemental",
+      "Nimona",
+      "Robot Dreams",
+      "Spider-Man: Across the Spider-Verse"
+    ]
+  },
+  {
+    "id": 12,
+    "category": "Best Documentary Feature",
+    "options": [
+      "Bobi Wine: The People's President",
+      "The Eternal Memory",
+      "Four Daughters",
+      "To Kill a Tiger",
+      "20 Days in Mariupol"
+    ]
+  },
+  {
+    "id": 13,
+    "category": "Best Costume Design",
+    "options": [
+      "Barbie",
+      "Killers of the Flower Moon",
+      "Napoleon",
+      "Oppenheimer",
+      "Poor Things"
+    ]
+  },
+  {
+    "id": 14,
+    "category": "Best Make-up and Hairstyling",
+    "options": [
+      "Golda",
+      "Maestro",
+      "Oppenheimer",
+      "Poor Things",
+      "Society of the Snow"
+    ]
+  },
+  {
+    "id": 15,
+    "category": "Best Production Design",
+    "options": [
+      "Barbie",
+      "Killers of the Flower Moon",
+      "Napoleon",
+      "Oppenheimer",
+      "Poor Things"
+    ]
+  },
+  {
+    "id": 16,
+    "category": "Best Sound",
+    "options": [
+      "The Creator",
+      "Maestro",
+      "Mission: Impossible - Dead Reckoning Part One",
+      "Oppenheimer",
+      "The Zone of Interest"
+    ]
+  },
+  {
+    "id": 17,
+    "category": "Best Film Editing",
+    "options": [
+      "Anatomy of a Fall",
+      "The Holdovers",
+      "Killers of the Flower Moon",
+      "Oppenheimer",
+      "Poor Things"
+    ]
+  },
+  {
+    "id": 18,
+    "category": "Best Cinematography",
+    "options": [
+      "El Conde",
+      "Killers of the Flower Moon",
+      "Maestro",
+      "Oppenheimer",
+      "Poor Things"
+    ]
+  },
+  {
+    "id": 19,
+    "category": "Best Visual Effects",
+    "options": [
+      "The Creator",
+      "Godzilla Minus One",
+      "Guardians of the Galaxy Vol. 3",
+      "Mission: Impossible - Dead Reckoning Part One",
+      "Napoleon"
+    ]
+  },
+  {
+    "id": 20,
+    "category": "Best Live Action Short",
+    "options": [
+      "The After",
+      "Invincible",
+      "Knight of Fortune",
+      "Red, White and Blue",
+      "The Wonderful Story of Henry Sugar"
+    ]
+  },
+  {
+    "id": 21,
+    "category": "Best Animated Short",
+    "options": [
+      "Letter to a Pig",
+      "Ninety-Five Senses",
+      "Our Uniform",
+      "Pachyderme",
+      "War Is Over! Inspired by the Music of John & Yoko"
+    ]
+  },
+  {
+    "id": 22,
+    "category": "Best Documentary Short",
+    "options": [
+      "The ABCs of Book Banning",
+      "The Barber of Little Rock",
+      "Island In Between",
+      "The Last Repair Shop",
+      "Nǎi Nai and Wài Pó"
+    ]
+  }
+]
