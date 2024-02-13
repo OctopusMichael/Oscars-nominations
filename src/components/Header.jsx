@@ -1,4 +1,4 @@
-import oscar from "../assets/pngwing.com.png";
+import oscar from "../assets/oscar.png";
 const Header = () => {
   return (
     <header>
