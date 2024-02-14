@@ -1,9 +1,13 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import data from "./json/nominations.json";
 import Header from "./components/Header";
+import { ArrowLeft } from "lucide-react";
 
 function App() {
-  const [newList, setNewList] = useState([]);
+  const [newList, setNewList] = useState(() => {
+    const storedState = localStorage.getItem("newList");
+    return storedState ? JSON.parse(storedState) : /* Valor por defecto */ "";
+  });
   const [selectedOptions, setSelectedOptions] = useState({});
 
   const handleCheck = (categoria, nominados) => {
@@ -17,6 +21,10 @@ function App() {
     e.preventDefault();
     setNewList(Object.entries(selectedOptions));
   };
+
+  useEffect(() => {
+    localStorage.setItem("newList", JSON.stringify(newList));
+  }, [newList]);
 
   return (
     <>
@@ -34,12 +42,12 @@ function App() {
                   key={e.id}
                   className="bg-slate-800  p-10  flex flex-col gap-5 rounded-xl  "
                 >
-                  <h1 className="text-yellow-500 text-2xl md:text-3xl font-bold">
+                  <h1 className="text-yellow-500 text-2xl md:text-3xl font-bold ">
                     {e.category}
                   </h1>
                   {e.options.map((nominates, i) => (
                     <label
-                      className="flex items-center gap-3 font-bold   text-[14px] hover:text-[#7a6ef7] "
+                      className="flex items-center gap-3 font-bold   text-[14px] hover:text-[#7a6ef7] cursor-pointer "
                       key={i}
                     >
                       <input
@@ -48,6 +56,7 @@ function App() {
                         type="checkbox"
                         id="checkboxNoLabel"
                         className="checkbox checkbox-primary border-1  border-purple-200"
+                        
                       />
                       {nominates}
                     </label>
@@ -60,11 +69,22 @@ function App() {
             </form>
           ) : (
             <div className="h-auto">
-              <ul className="grid grid-cols-1 lg:grid-cols-4 bg-slate-800 p-12 gap-10 rounded-3xl shadow-xl">
+              <div className="flex justify-between  items-center my-6">
+                <h1 className="text-3xl  ">My favorite Nominations :</h1>
+                <button
+                  onClick={() => setNewList("")}
+                  className=" p-3 rounded-xl flex  gap-2  bg-[#7a6ef7] hover:bg-[#9990f9] text-white"
+                >
+                  <ArrowLeft /> BACK
+                </button>
+              </div>
+              <ul className="grid grid-cols-1 lg:grid-cols-2 bg-slate-800 p-12 gap-10 rounded-3xl shadow-xl ">
                 {newList.map((e) => (
-                  <li className="flex flex-col gap-2" key={e[1]}>
-                    <h1 className="text-yellow-500 text-xl md:text-3xl">{e[0]}</h1>
-                    <h2>{e[1]}</h2>
+                  <li className="flex flex-col  gap-2" key={e[1]}>
+                    <h1 className="text-yellow-500 text-xl md:text-3xl">
+                      {e[0]}
+                    </h1>
+                    <h2 className="text-white">{e[1]}</h2>
                   </li>
                 ))}
               </ul>
