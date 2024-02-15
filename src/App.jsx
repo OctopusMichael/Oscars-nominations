@@ -71,15 +71,30 @@ function App() {
           ) : (
             <div className="h-auto">
               <div className="flex justify-between  items-center my-6">
-                <h1 className="text-3xl  ">My favorite Nominations :</h1>
+                <h1 className="text-xl lg:text-3xl  ">
+                  My favorite Nominations :
+                </h1>
                 <button
                   onClick={() => setNewList("")}
-                  className=" p-3 rounded-xl flex  gap-2  bg-[#7a6ef7] hover:bg-[#9990f9] text-white"
+                  className=" font-bold p-4 rounded-xl flex  gap-2  bg-[#7a6ef7] hover:bg-[#9990f9] text-white"
                 >
                   <ArrowLeft /> BACK
                 </button>
               </div>
-              <Atropos>
+              <ul
+                data-atropos-offset="0"
+                className=" grid grid-cols-1 lg:grid-cols-2 bg-slate-800 p-12 gap-10 rounded-3xl shadow-xl visible lg:hidden  "
+              >
+                {newList.map((e) => (
+                  <li className="flex flex-col  gap-2" key={e[1]}>
+                    <h1 className="text-yellow-500 text-xl md:text-3xl">
+                      {e[0]}
+                    </h1>
+                    <h2 className="text-white">{e[1]}</h2>
+                  </li>
+                ))}
+              </ul>
+              <Atropos className="hidden lg:block">
                 <ul
                   data-atropos-offset="0"
                   className=" grid grid-cols-1 lg:grid-cols-2 bg-slate-800 p-12 gap-10 rounded-3xl shadow-xl  "
