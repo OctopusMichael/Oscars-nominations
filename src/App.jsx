@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import data from "./json/nominations.json";
 import Header from "./components/Header";
 import { ArrowLeft } from "lucide-react";
+import Atropos from "atropos/react";
+import "atropos/css";
 
 function App() {
   const [newList, setNewList] = useState(() => {
@@ -35,7 +37,7 @@ function App() {
           {newList.length === 0 ? (
             <form
               onSubmit={handleSubmit}
-              className="grid grid-cols-1 lg:grid-cols-3 gap-5   md:mx-5 "
+              className="grid grid-cols-1 lg:grid-cols-2 gap-5   md:mx-5 "
             >
               {data.map((e) => (
                 <fieldset
@@ -56,7 +58,6 @@ function App() {
                         type="checkbox"
                         id="checkboxNoLabel"
                         className="checkbox checkbox-primary border-1  border-purple-200"
-                        
                       />
                       {nominates}
                     </label>
@@ -78,16 +79,21 @@ function App() {
                   <ArrowLeft /> BACK
                 </button>
               </div>
-              <ul className="grid grid-cols-1 lg:grid-cols-2 bg-slate-800 p-12 gap-10 rounded-3xl shadow-xl ">
-                {newList.map((e) => (
-                  <li className="flex flex-col  gap-2" key={e[1]}>
-                    <h1 className="text-yellow-500 text-xl md:text-3xl">
-                      {e[0]}
-                    </h1>
-                    <h2 className="text-white">{e[1]}</h2>
-                  </li>
-                ))}
-              </ul>
+              <Atropos>
+                <ul
+                  data-atropos-offset="0"
+                  className=" grid grid-cols-1 lg:grid-cols-2 bg-slate-800 p-12 gap-10 rounded-3xl shadow-xl  "
+                >
+                  {newList.map((e) => (
+                    <li className="flex flex-col  gap-2" key={e[1]}>
+                      <h1 className="text-yellow-500 text-xl md:text-3xl">
+                        {e[0]}
+                      </h1>
+                      <h2 className="text-white">{e[1]}</h2>
+                    </li>
+                  ))}
+                </ul>
+              </Atropos>
             </div>
           )}
         </section>
